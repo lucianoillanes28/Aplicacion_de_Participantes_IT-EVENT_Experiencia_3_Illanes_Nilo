@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Mi Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Mi Perfil</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-card>
+        <ion-card-header>
+          <!-- Mostrar el nombre de usuario almacenado en 'username' -->
+          <ion-card-title>Bienvenido, {{ username }}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-title>Configuracion ></ion-card-title>
+        <ion-card-title>Editar Mi Perfil ></ion-card-title>
+        <ion-card-title>Codigo QR ></ion-card-title>
+        <ion-card-title>Notificaciones ></ion-card-title>
+      </ion-card>
+
+      <!-- Botón de cerrar sesión -->
+      <div style="text-align: center; margin-top: 20px">
+        <ion-button
+          (click)="cerrarSesion()"
+          expand="solid"
+          shape="round"
+          color="medium"
+        >
+          Cerrar Sesión
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

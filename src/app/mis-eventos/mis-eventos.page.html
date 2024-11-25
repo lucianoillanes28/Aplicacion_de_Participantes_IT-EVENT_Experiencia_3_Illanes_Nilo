@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mis Eventos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Sección: Eventos Inscritos -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Eventos Inscritos</ion-card-title>
+    </ion-card-header>
+    <ion-list *ngIf="misEventos.length > 0; else noInscritos">
+      <ion-item *ngFor="let evento of misEventos">
+        <ion-label>
+          <h2>{{ evento.nombre }}</h2>
+          <p>{{ evento.descripcion }}</p>
+          <p>Fecha: {{ evento.fecha }}</p>
+          <p>Hora: {{ evento.hora }}</p>
+        </ion-label>
+        <ion-button (click)="desinscribirse(evento)" color="danger" slot="end">
+          Desinscribirse
+        </ion-button>
+      </ion-item>
+    </ion-list>
+    <ng-template #noInscritos>
+      <p style="text-align: center;">No estás inscrito en ningún evento.</p>
+    </ng-template>
+  </ion-card>
+
+  <!-- Sección: Eventos Disponibles -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Eventos Disponibles</ion-card-title>
+    </ion-card-header>
+    <ion-list *ngIf="eventosDisponibles.length > 0; else noDisponibles">
+      <ion-item *ngFor="let evento of eventosDisponibles">
+        <ion-label>
+          <h2>{{ evento.nombre }}</h2>
+          <p>{{ evento.descripcion }}</p>
+          <p>Fecha: {{ evento.fecha }}</p>
+          <p>Hora: {{ evento.hora }}</p>
+        </ion-label>
+        <ion-button (click)="inscribirse(evento)" color="primary" slot="end">
+          Inscribirse
+        </ion-button>
+      </ion-item>
+    </ion-list>
+    <ng-template #noDisponibles>
+      <p style="text-align: center;">No hay eventos disponibles.</p>
+    </ng-template>
+  </ion-card>
+</ion-content>

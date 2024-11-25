@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Resumen de Eventos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="eventosResumen.length > 0; else noEventos">
+    <ion-item *ngFor="let evento of eventosResumen">
+      <ion-label>
+        <h2>{{ evento.nombre }}</h2>
+        <p>{{ evento.descripcion }}</p>
+        <p>Inscritos: {{ evento.usuariosInscritos.length }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ng-template #noEventos>
+    <p style="text-align: center; margin-top: 20px;">No hay eventos disponibles</p>
+  </ng-template>
+</ion-content>
