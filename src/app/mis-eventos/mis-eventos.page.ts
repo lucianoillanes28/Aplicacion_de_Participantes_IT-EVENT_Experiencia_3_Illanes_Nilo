@@ -6,9 +6,10 @@ import { Users } from 'src/interfaces/users';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-mis-eventos',
-  templateUrl: './mis-eventos.page.html',
-  styleUrls: ['./mis-eventos.page.scss'],
+    selector: 'app-mis-eventos',
+    templateUrl: './mis-eventos.page.html',
+    styleUrls: ['./mis-eventos.page.scss'],
+    standalone: false
 })
 export class MisEventosPage implements OnInit {
   misEventos: IEventos[] = [];

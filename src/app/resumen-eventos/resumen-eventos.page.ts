@@ -4,9 +4,10 @@ import { IEventos } from 'src/interfaces/IEventos';
 import { interval, Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-resumen-eventos',
-  templateUrl: './resumen-eventos.page.html',
-  styleUrls: ['./resumen-eventos.page.scss'],
+    selector: 'app-resumen-eventos',
+    templateUrl: './resumen-eventos.page.html',
+    styleUrls: ['./resumen-eventos.page.scss'],
+    standalone: false
 })
 export class ResumenEventosPage implements OnInit, OnDestroy {
   eventosResumen: IEventos[] = [];

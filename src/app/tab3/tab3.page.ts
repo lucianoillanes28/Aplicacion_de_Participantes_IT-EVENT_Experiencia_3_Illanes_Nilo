@@ -8,9 +8,10 @@ import { AlertController } from '@ionic/angular';
 import { Users } from 'src/interfaces/users';
 
 @Component({
-  selector: 'app-tab3',
-  templateUrl: 'tab3.page.html',
-  styleUrls: ['tab3.page.scss']
+    selector: 'app-tab3',
+    templateUrl: 'tab3.page.html',
+    styleUrls: ['tab3.page.scss'],
+    standalone: false
 })
 export class Tab3Page {
   eventos: IEventos[] = [];

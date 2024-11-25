@@ -5,9 +5,10 @@ import { IEventos } from 'src/interfaces/IEventos';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-eliminar',
-  templateUrl: './eliminar.page.html',
-  styleUrls: ['./eliminar.page.scss'],
+    selector: 'app-eliminar',
+    templateUrl: './eliminar.page.html',
+    styleUrls: ['./eliminar.page.scss'],
+    standalone: false
 })
 export class EliminarPage implements OnInit {
 

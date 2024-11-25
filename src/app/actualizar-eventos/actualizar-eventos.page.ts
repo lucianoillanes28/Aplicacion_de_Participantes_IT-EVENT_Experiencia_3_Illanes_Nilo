@@ -4,9 +4,10 @@ import { IEventos } from 'src/interfaces/IEventos';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-actualizar-eventos',
-  templateUrl: './actualizar-eventos.page.html',
-  styleUrls: ['./actualizar-eventos.page.scss'],
+    selector: 'app-actualizar-eventos',
+    templateUrl: './actualizar-eventos.page.html',
+    styleUrls: ['./actualizar-eventos.page.scss'],
+    standalone: false
 })
 export class ActualizarEventosPage implements OnInit {
 

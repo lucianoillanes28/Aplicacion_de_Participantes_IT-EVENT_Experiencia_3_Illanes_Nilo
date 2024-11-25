@@ -3,9 +3,10 @@ import { Router, NavigationEnd } from '@angular/router';
 import { IEventos } from 'src/interfaces/IEventos';
 
 @Component({
-  selector: 'app-qr-page',
-  templateUrl: './qr-page.page.html',
-  styleUrls: ['./qr-page.page.scss'],
+    selector: 'app-qr-page',
+    templateUrl: './qr-page.page.html',
+    styleUrls: ['./qr-page.page.scss'],
+    standalone: false
 })
 export class QrPagePage implements OnInit {
   qrdata: string = '';

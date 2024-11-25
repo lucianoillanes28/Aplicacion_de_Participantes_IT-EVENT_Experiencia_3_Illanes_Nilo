@@ -4,9 +4,10 @@ import { IEventos } from 'src/interfaces/IEventos';  // Interfaz que define la e
 import { Router } from '@angular/router';  // Servicio para la navegación entre páginas
 
 @Component({
-  selector: 'app-detalle-evento',
-  templateUrl: './detalle-evento.page.html',
-  styleUrls: ['./detalle-evento.page.scss'],
+    selector: 'app-detalle-evento',
+    templateUrl: './detalle-evento.page.html',
+    styleUrls: ['./detalle-evento.page.scss'],
+    standalone: false
 })
 export class DetalleEventoPage implements OnInit {
 

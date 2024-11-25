@@ -5,9 +5,10 @@ import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-agregar',
-  templateUrl: './agregar.page.html',
-  styleUrls: ['./agregar.page.scss'],
+    selector: 'app-agregar',
+    templateUrl: './agregar.page.html',
+    styleUrls: ['./agregar.page.scss'],
+    standalone: false
 })
 export class AgregarPage implements OnInit {
 

@@ -5,9 +5,10 @@ import { ApicrudService } from '../services/apicrud.service';  // Servicio que m
 import { Router } from '@angular/router';  // Servicio para navegar entre rutas en la aplicación
 
 @Component({
-  selector: 'app-actualizar',
-  templateUrl: './actualizar.page.html',
-  styleUrls: ['./actualizar.page.scss'],
+    selector: 'app-actualizar',
+    templateUrl: './actualizar.page.html',
+    styleUrls: ['./actualizar.page.scss'],
+    standalone: false
 })
 export class ActualizarPage implements OnInit {
 

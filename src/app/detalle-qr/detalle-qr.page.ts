@@ -6,9 +6,10 @@ import { Users } from 'src/interfaces/users';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-detalle-qr',
-  templateUrl: './detalle-qr.page.html',
-  styleUrls: ['./detalle-qr.page.scss'],
+    selector: 'app-detalle-qr',
+    templateUrl: './detalle-qr.page.html',
+    styleUrls: ['./detalle-qr.page.scss'],
+    standalone: false
 })
 export class DetalleQrPage implements OnInit {
 

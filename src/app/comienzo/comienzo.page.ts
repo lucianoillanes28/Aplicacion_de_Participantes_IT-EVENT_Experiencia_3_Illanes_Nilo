@@ -5,9 +5,10 @@ import { AuthService } from '../services/auth.service';  // Servicio de autentic
 import { AlertController } from '@ionic/angular';  // Controlador para alertas
 
 @Component({
-  selector: 'app-comienzo',
-  templateUrl: './comienzo.page.html',
-  styleUrls: ['./comienzo.page.scss'],
+    selector: 'app-comienzo',
+    templateUrl: './comienzo.page.html',
+    styleUrls: ['./comienzo.page.scss'],
+    standalone: false
 })
 export class ComienzoPage implements OnInit {
 
