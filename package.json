@@ -1,10 +1,12 @@
 {
   "name": "MyApp",
   "version": "0.0.1",
-  "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
+    "start:angular": "ng serve",
+    "start:server": "node index.js",
+    "start": "concurrently \"ng serve\" \"node index.js\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -44,6 +46,7 @@
     "@angular/language-service": "^18.2.12",
     "@capacitor/cli": "6.1.2",
     "@ionic/angular-toolkit": "^11.0.1",
+    "concurrently": "^9.1.0",
     "typescript": "~5.5.0"
   }
 }
