@@ -43,9 +43,8 @@
       "hora": "9:00 am a 21:00 pm ",
       "descripcion": "Evento de Videojuegos",
       "usuariosInscritos": [
-        "1",
-        "2",
-        "b344"
+        "b344",
+        "2"
       ],
       "cantidadAsistentes": "NaN"
     },

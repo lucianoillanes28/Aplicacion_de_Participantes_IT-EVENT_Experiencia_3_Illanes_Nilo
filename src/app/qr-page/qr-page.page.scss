@@ -1,0 +1,19 @@
+/* Elimina márgenes y padding globales */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Clase para eliminar márgenes y padding en ion-content */
+  .no-padding {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos adicionales para ajustar ion-grid */
+  .ion-no-padding {
+    padding: 0 !important;
+  }
+  
