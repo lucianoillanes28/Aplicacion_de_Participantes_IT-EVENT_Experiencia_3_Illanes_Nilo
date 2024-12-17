@@ -1,6 +1,11 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>Inicio de Sesión</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -42,6 +47,10 @@
         Login
       </ion-button>      
     </div>
+
+    <ion-button expand="full" (click)="goToRecovery()">¿Olvidaste tu contraseña?</ion-button>
+
+
       
     
   </form>

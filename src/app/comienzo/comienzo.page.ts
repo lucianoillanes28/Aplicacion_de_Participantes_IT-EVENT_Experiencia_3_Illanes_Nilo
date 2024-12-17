@@ -3,6 +3,7 @@ import { FormBuilder, Validators, FormGroup, FormControl } from '@angular/forms'
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';  // Servicio de autenticación
 import { AlertController } from '@ionic/angular';  // Controlador para alertas
+import { Location } from '@angular/common'; // Importa Location para volver a la página anterior
 
 @Component({
     selector: 'app-comienzo',
@@ -18,9 +19,9 @@ export class ComienzoPage implements OnInit {
     private authservice: AuthService, 
     private router: Router, 
     private alertcontroller: AlertController, 
-    private builder: FormBuilder
+    private builder: FormBuilder,
+    private location: Location
   ) {
-    // Inicialización del formulario de login con validaciones
     this.loginForm = this.builder.group({
       'username': new FormControl("", [Validators.required, Validators.minLength(6)]),
       'password': new FormControl("", [Validators.required, Validators.minLength(8)]),
@@ -75,4 +76,12 @@ export class ComienzoPage implements OnInit {
     // Lógica para el registro (no implementada aún)
   }
 
+  // Nueva función para redirigir a la página de recuperación de contraseña
+  goToRecovery() {
+    this.router.navigate(['/recovery-password']);
+  }
+
+  goBack() {
+    this.location.back(); // Vuelve a la página anterior
+  }
 }

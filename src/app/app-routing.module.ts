@@ -70,6 +70,10 @@ const routes: Routes = [
   {
     path: 'resumen-eventos',
     loadChildren: () => import('./resumen-eventos/resumen-eventos.module').then( m => m.ResumenEventosPageModule)
+  },
+  {
+    path: 'recovery-password',
+    loadChildren: () => import('./recovery-password/recovery-password.module').then( m => m.RecoveryPasswordPageModule)
   }
 ];
 
