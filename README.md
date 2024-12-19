@@ -72,3 +72,10 @@ Si deseas usar la API alojada en Render en lugar del servidor JSON local, sigue 
 - Para usar Render de manera óptima, asegúrate de que la API esté en línea y cargue correctamente los datos.
 
 --- 
+
+### **Uso de Apk**
+
+- La aplicacion ya quedo funcional simplemente se carga al android studio o puede descargar e instalar desde su dispositivo movil
+- usuario de ejemplo: luciano
+- contraseña: duoc1234
+- usuario4@mail.cl usar este correo para la recuperacion de contraseña
